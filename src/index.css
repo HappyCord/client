@@ -1,0 +1,172 @@
+:root {
+
+  /** background colors **/
+  --primary-100-dark: #313338;
+  --primary-200-dark: #2B2D31;
+  --primary-300-dark: #1E1F22;
+
+  /** ui colors **/
+  --brand-color: #5865F2;
+  --primary-color: #4E5058;
+  --transparent-color: #46484C;
+  --red-color: #DA373C;
+  --green-color: #248046;
+  --yellow-color: #F0B132;
+  --link-color: #00A8FC;
+  --white-color: #FFFFFF;
+
+  /** hover colors */
+  --hover-brand: #4752C4;
+  --hover-brand-new: #4752C4;
+  --hover-red: #A12828;
+  --hover-green: #1A6334;
+  --hover-primary: #6D6F78;
+  --hover-transparent: #3B3D42;
+
+  /** sizes **/
+
+  --custom-button-button-xl-width: 148px;
+  --custom-button-button-xl-height: 50px;
+
+  --custom-button-button-lg-width: 130px;
+  --custom-button-button-lg-height: 44px;
+
+  --custom-button-button-md-width: 96px;
+  --custom-button-button-md-height: 38px;
+
+  --custom-button-button-sm-width: 60px;
+  --custom-button-button-sm-height: 32px;
+
+  --custom-button-button-tn-height: 24px;
+  --custom-button-button-tn-width: 52px;
+
+  --custom-button-link-underline-width: 1px;
+  --custom-button-link-underline-offset: 1px;
+
+  --custom-button-filled-hover: 0.1;
+  --custom-button-filled-active: 0.2;
+  --custom-button-transition-duration: 170ms;
+  --custom-modal-min-width-large: 800px;
+}
+
+.theme-dark {
+  background-color: var(--primary-200-dark);
+}
+
+.Button {
+  transition: background-color var(--custom-button-transition-duration)ease-in-out, color var(--custom-button-transition-duration)ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 2px 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  appearance: auto;
+
+}
+
+.Button_colorBrand,
+.Button_colorBrandNew {
+  background-color: var(--brand-color);
+}
+
+.Button_colorPrimary {
+  background-color: var(--primary-color);
+}
+
+.Button_colorRed {
+  background-color: var(--red-color);
+}
+
+.Button_colorGreen {
+  background-color: var(--green-color);
+}
+
+.Button_colorYellow {
+  background-color: var(--yellow-color);
+}
+
+.Button_colorLink {
+  background-color: var(--link-color);
+}
+
+.Button_colorWhite {
+  background-color: var(--white-color);
+  color: black;
+}
+
+.Button_colorTransparent {
+  background-color: var(--transparent-color);
+}
+
+
+.Button_hoverBrand:hover,
+.Button_hoverBrandNew:hover {
+  background-color: var(--hover-brand);
+}
+
+.Button_hoverRed:hover {
+  background-color: var(--hover-red);
+}
+
+.Button_hoverPrimary:hover {
+  background-color: var(--hover-primary);
+}
+
+.Button_hoverGreen:hover {
+  background-color: var(--hover-green);
+}
+
+.Button_hoverTransparent:hover {
+  background-color: var(--hover-transparent);
+}
+
+/* Tiny */
+.sizeTiny {
+  width: var(--custom-button-button-tn-width);
+  height: var(--custom-button-button-tn-height);
+}
+
+/* Small */
+.sizeSmall {
+  width: var(--custom-button-button-sm-width);
+  height: var(--custom-button-button-sm-height);
+}
+
+/* Medium */
+.sizeMedium {
+  width: var(--custom-button-button-md-width);
+  height: var(--custom-button-button-md-height);
+}
+
+/* Large */
+.sizeLarge {
+  width: var(--custom-button-button-lg-width);
+  height: var(--custom-button-button-lg-height);
+}
+
+/* Extra Large */
+.sizeXlarge {
+  width: var(--custom-button-button-xl-width);
+  height: var(--custom-button-button-xl-height);
+}
+
+.divider {
+  margin: 8px 10px;
+  height: 1px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: white;
+  font-weight: bold;
+}
